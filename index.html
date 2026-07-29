@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vantly – Kirish</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="page">
+    <div class="login-wrapper">
+
+      <!-- Chap taraf: login karta -->
+      <div class="login-card">
+        <div class="logo">Vantly</div>
+
+        <form id="loginForm" novalidate>
+          <div class="field" id="usernameField">
+            <input type="text" id="username" name="username" autocomplete="username" required />
+            <label for="username">Foydalanuvchi nomi yoki email</label>
+          </div>
+
+          <div class="field" id="passwordField">
+            <input type="password" id="password" name="password" autocomplete="current-password" required />
+            <label for="password">Parol</label>
+            <button type="button" class="toggle-eye" id="toggleEye" aria-label="Parolni ko'rsatish">Ko'rsatish</button>
+          </div>
+
+          <button type="submit" class="btn-primary" id="submitBtn" disabled>
+            <span class="btn-text">Kirish</span>
+            <span class="spinner" aria-hidden="true"></span>
+          </button>
+
+          <p class="error-msg" id="errorMsg" role="alert"></p>
+
+          <div class="divider"><span>YOKI</span></div>
+
+          <button type="button" class="btn-secondary" id="fbLoginBtn">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true">
+              <path d="M17 9.05A8 8 0 1 0 7.66 17V11.6H5.66V9.05h2V7.2c0-2 1.2-3.1 3-3.1.86 0 1.76.15 1.76.15v1.95h-1c-1 0-1.3.6-1.3 1.25v1.6h2.2l-.35 2.55h-1.85V17A8 8 0 0 0 17 9.05Z"/>
+            </svg>
+            Facebook orqali kirish
+          </button>
+
+          <a href="#" class="forgot-link">Parolni unutdingizmi?</a>
+        </form>
+      </div>
+
+      <!-- Ro'yxatdan o'tish karta -->
+      <div class="signup-card">
+        <p>Hisobingiz yo'qmi? <a href="#" id="signupLink">Ro'yxatdan o'tish</a></p>
+      </div>
+
+      <!-- Ilova yuklab olish -->
+      <div class="app-download">
+        <p>Ilovani yuklab oling.</p>
+        <div class="store-badges">
+          <div class="badge">App Store</div>
+          <div class="badge">Google Play</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- O'ng taraf: telefon mokap -->
+    <div class="phone-mock" aria-hidden="true">
+      <div class="phone-frame">
+        <div class="phone-notch"></div>
+        <div class="phone-screen" id="phoneSlides"></div>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
